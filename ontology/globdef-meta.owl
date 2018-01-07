@@ -33,6 +33,16 @@
     
 
 
+    <!-- http://globdef.github.io/ontology/globdef-meta.owl#hasResult -->
+
+    <owl:ObjectProperty rdf:about="http://globdef.github.io/ontology/globdef-meta.owl#hasResult">
+        <owl:inverseOf rdf:resource="http://globdef.github.io/ontology/globdef-meta.owl#isResultFor"/>
+        <rdfs:domain rdf:resource="http://globdef.github.io/ontology/globdef-meta.owl#Goal"/>
+        <rdfs:range rdf:resource="http://globdef.github.io/ontology/globdef-meta.owl#GoalResult"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://globdef.github.io/ontology/globdef-meta.owl#isCreatedBy -->
 
     <owl:ObjectProperty rdf:about="http://globdef.github.io/ontology/globdef-meta.owl#isCreatedBy">
@@ -69,6 +79,15 @@
     
 
 
+    <!-- http://globdef.github.io/ontology/globdef-meta.owl#isResultFor -->
+
+    <owl:ObjectProperty rdf:about="http://globdef.github.io/ontology/globdef-meta.owl#isResultFor">
+        <rdfs:domain rdf:resource="http://globdef.github.io/ontology/globdef-meta.owl#GoalResult"/>
+        <rdfs:range rdf:resource="http://globdef.github.io/ontology/globdef-meta.owl#Goal"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -101,7 +120,7 @@
     <!-- http://globdef.github.io/ontology/globdef-meta.owl#isCompletedOn -->
 
     <owl:DatatypeProperty rdf:about="http://globdef.github.io/ontology/globdef-meta.owl#isCompletedOn">
-        <rdfs:domain rdf:resource="http://globdef.github.io/ontology/globdef-meta.owl#Goal"/>
+        <rdfs:domain rdf:resource="http://globdef.github.io/ontology/globdef-meta.owl#GoalResult"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     

@@ -136,6 +136,19 @@
     
 
 
+    <!-- http://globdef.github.io/ontology/globdef-meta.owl#Enhancement -->
+
+    <owl:Class rdf:about="http://globdef.github.io/ontology/globdef-meta.owl#Enhancement">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://globdef.github.io/ontology/globdef-meta.owl#isEnhancementFor"/>
+                <owl:someValuesFrom rdf:resource="http://globdef.github.io/ontology/globdef-meta.owl#GoalResult"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
     <!-- http://globdef.github.io/ontology/globdef-meta.owl#Enhancer -->
 
     <owl:Class rdf:about="http://globdef.github.io/ontology/globdef-meta.owl#Enhancer">
